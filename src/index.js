@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Lesson from './04_props/Lesson.jsx';
+import './index.css';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Lesson />, document.getElementById('root'));
+
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
