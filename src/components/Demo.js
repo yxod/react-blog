@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from 'react-router-dom'; 
+import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -12,7 +11,7 @@ const styles = {
   },
 };
 
-function Navigation(props) {
+function Demo(props) {
   const { classes } = props;
 
   return (
@@ -20,10 +19,13 @@ function Navigation(props) {
       <AppBar position="static" color="default">
         <Toolbar>
           <Typography variant="h6" color="inherit">
-            <a href="/">Todolist</a>
+          <a href="game">game</a>
           </Typography>
           <Typography variant="h6" color="inherit">
-          <a href="/game">Game</a>
+            Photos
+          </Typography>
+          <Typography variant="h6" color="inherit">
+            Photos
           </Typography>
         </Toolbar>
       </AppBar>
@@ -31,8 +33,8 @@ function Navigation(props) {
   );
 }
 
-Navigation.propTypes = {
+Demo.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Navigation);
+export default withStyles(styles)(Demo);
